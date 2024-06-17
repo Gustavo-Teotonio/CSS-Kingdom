@@ -10,7 +10,7 @@ const modo = localStorage.getItem("modoJogo")
 
 function persistencia(){
     const listaFasesCompletas = JSON.parse(localStorage.getItem("fasesConcluidas"))
-    if(!listaFasesCompletas.includes("qautro")){
+    if(!listaFasesCompletas.includes("quatro")){
         listaFasesCompletas.push("quatro")
   
         localStorage.setItem("fasesConcluidas", JSON.stringify(listaFasesCompletas))
@@ -47,7 +47,7 @@ btnPink.addEventListener('change', function() {
     if (this.checked) { 
         persistencia()
         modal.showModal()
-        voltarMapa.addEventListener("click",()=>{
+        bntVoltar.addEventListener("click",()=>{
             if(modo == "historia"){
                 window.location.href = "../../Mapas/MapaHistoria/mapaHistoria.html"
             }else{
