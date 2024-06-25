@@ -5,6 +5,8 @@ const botao4 = document.querySelector("#quatro")
 const botao5 = document.querySelector("#cinco")
 const botao6 = document.querySelector("#seis")
 const botao7 = document.querySelector("#sete")
+const arrayBotoes = []
+arrayBotoes.push(botao1, botao2, botao3, botao4, botao5, botao6, botao7)
 
 const fasesConcluidas = JSON.parse(localStorage.getItem("fasesConcluidas"))
 const modal = document.querySelector("#dialog-mensagem")

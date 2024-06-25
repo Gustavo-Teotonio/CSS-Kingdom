@@ -145,12 +145,15 @@ valorLeftInput.addEventListener("keyup", ()=>{
 
 valorZindexInput.addEventListener("keyup", ()=>{
     valorZindex = valorZindexInput.value.toLowerCase().trim()
-
-    if(valorZindex >= 2 && parteRasa == 1){
-        princesa.style.zIndex = valorZindex
-        window.alert("A princesa está pronta para a travessia!!!")
+    if(valorLeft != ""){
+        if(valorZindex >= 2 && parteRasa == 1){
+            princesa.style.zIndex = valorZindex
+            window.alert("A princesa está pronta para a travessia!!!")
+        }else{
+            window.alert("A princesa irá se afogar, pois ainda não chegou na parte rasa!!!")
+        }
     }else{
-        window.alert("A princesa irá se afogar, pois ainda não chegou na parte rasa!!!")
+        window.alert("Primeiro você deve chegar perto do rio com o left")
     }
 })
 

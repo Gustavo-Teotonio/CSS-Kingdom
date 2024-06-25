@@ -93,7 +93,6 @@ button.learn-more:active::before {
     transform: translate3d(0, 0, -1em);
 }
 
-
 button.learn-more {
     font-weight: 500px;
     color: #382b22;

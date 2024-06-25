@@ -69,6 +69,8 @@ a {
 #princesa {
     display: block;
     margin: 0 auto;
+    width: 400px;
+    height: 448px;
 }
 
 #botoes {
