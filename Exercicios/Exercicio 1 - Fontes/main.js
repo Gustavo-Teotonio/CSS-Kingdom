@@ -77,15 +77,18 @@ botaoValidar.addEventListener("click", function() {
   } else if(contador == 1){
     window.alert("25% de erro, tente novamente");
   } else {  
-    persistencia()
-    modal.showModal()
-    bntVoltar.addEventListener("click",()=>{
-      if(modo == "historia"){
-        window.location.href = "../../Mapas/MapaHistoria/mapaHistoria.html"
-      }else{
-        window.location.href = "../../Mapas/MapaExplorar/mapaExplorar.html"
-      }
-    })
+    setTimeout(()=>{
+      persistencia()
+      modal.showModal()
+      bntVoltar.addEventListener("click",()=>{
+        if(modo == "historia"){
+          window.location.href = "../../Mapas/MapaHistoria/mapaHistoria.html"
+        }else{
+          window.location.href = "../../Mapas/MapaExplorar/mapaExplorar.html"
+        }
+      })
+  },2000);
+    
   }
 
 });

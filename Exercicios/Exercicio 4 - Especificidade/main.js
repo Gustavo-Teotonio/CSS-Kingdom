@@ -17,11 +17,14 @@ function persistencia(){
   }
   }
 // Função para exibir alerta e desmarcar checkbox após 5 segundos
+// Função para exibir alerta e desmarcar checkbox após 5 segundos
 function showAlertAndUncheck(message, checkbox) {
-    window.alert(message);
     setTimeout(() => {
         checkbox.checked = false;
     }, 500);
+    setTimeout(()=>{
+        window.alert(message);
+    },500);
 }
 
 // Adicionando event listeners para cada checkbox
