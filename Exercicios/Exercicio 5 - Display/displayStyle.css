@@ -40,8 +40,8 @@ h1 {
     position: relative;
     text-align: center;
     float: left;
-    width: 90.2vh;
-    height: 65vh;
+    width: 80vh;
+    height: 95vh;
     padding: 12vh 6vw
 }
  
@@ -200,8 +200,8 @@ h1 {
   position: relative;
   text-align: center;
   float: right;
-  width: 90vh;
-  height: 89vh;
+  width: 100vh;
+  height: 119vh;
 }
 
 #bruxa {
@@ -222,4 +222,26 @@ h1 {
   text-align: center;
   padding: 30px;
   border-radius: 10px;
+}
+
+.code-explicacao{
+  background-color: #db91ad;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+h3 {
+  font-family: 'Kufam', sans-serif;
+  color: #DA417C;
+  font-weight: normal;
+  text-align: center;
+  font-size: 25px;
+}
+
+#resumo-justify {
+  display: none;
+}
+
+#input-justify {
+  display: none;
 }
